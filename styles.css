@@ -556,56 +556,59 @@ input[type="radio"]:checked + .acordeon-titulo + .acordeon-contenido {
 
 /*** Contenedor de educacion ***/
 #educacion {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
   background-color: #3c3d3d;
-  color: white;
+  color: #333;
+  padding: 60px 20px;
   text-align: center;
 }
 
 #educacion h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #EC406E; /* Título en color destacado */
+  color: #EC406E;
+  margin-bottom: 40px;
+  font-weight: 700;
 }
 
-#educacion ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1.5rem;
-  line-height: 2rem;
+.educacion-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
-#educacion li {
-  margin-bottom: 15px;
+.educacion-item {
+  background-color: #202020;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Responsividad para pantallas más pequeñas */
-@media (max-width: 768px) {
-  #educacion h2 {
-    font-size: 2rem;
-  }
-
-  #educacion ul {
-    font-size: 1.2rem;
-  }
+.educacion-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 480px) {
-  #educacion h2 {
-    font-size: 1.8rem;
-  }
-
-  #educacion ul {
-    font-size: 1rem;
-  }
+.educacion-item h3 {
+  font-size: 1.8rem;
+  color: #EC406E;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
+
+.institucion {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.fecha {
+  font-size: 1.1rem;
+  color: #777;
+}
+
 
 
 
