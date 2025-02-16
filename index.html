@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Interactivo - Martha Acosta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <!-- Menú de navegación (Movido a la parte superior) -->
+  <div class="menu-container">
+    <nav>
+      <div id="logo">
+        <a href="#">Martha Acosta</a>
+      </div>
+      <ul id="menu">
+        <li><a href="#informacion-personal"><i class="fas fa-user"></i> Sobre Mi</a></li>
+        <li><a href="#experiencia-laboral"><i class="fas fa-briefcase"></i> Experiencia</a></li>
+        <li><a href="#educacion"><i class="fas fa-graduation-cap"></i> Educación</a></li>
+        <li><a href="#habilidades"><i class="fas fa-cogs"></i> Habilidades</a></li>
+        <li><a href="#proyectos"><i class="fas fa-tasks"></i> Proyectos</a></li>
+        <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+      </ul>
+    
+      <div id="hamburger" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    
+  </div>
+
+  <header>
+    
+    <h1 class="typing">Martha Acosta<span class="cursor"></span></h1>
+ 
+    <p class="scrolling-text">Lic. Informática > Analista de Datos, Programación Web</p>
+
+
+    <!-- Botón de flecha hacia abajo -->
+    <button onclick="scrollToSection('informacion-personal')" class="down-button">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+
+    
+</header>
+
+
+  <!-- Sección Información Personal -->
+  <section id="informacion-personal" class="full-screen">
+    <h2>Sobre mí</h2>
+    <div class="mini-cont-personal">
+      <p>Soy una profesional apasionada por la tecnología y el análisis de datos, con experiencia en desarrollo web, manejo de bases de datos y visualización de datos. Disfruto de aprender nuevas habilidades y optimizar procesos para lograr mejores resultados.</p>
+    </div>
+    <div class="mini-cont-personal">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Buscar a Cristo Jesús</li>
+          <li>Desarrollar proyectos personales en programación</li>
+          <li>Pasar tiempo con la familia</li>
+          <li>Estudiar y aprender nuevas habilidades</li>
+          <li>Salir a pasear y explorar nuevos lugares</li>          
+        </ul>
+    </div>
+
+    <button onclick="scrollToSection('experiencia-laboral')" class="scroll-button">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+  </section>
+  
+
+  <!-- Sección Experiencia Laboral -->
+  <section id="experiencia-laboral" class="full-screen">
+    <h2>Experiencia Laboral</h2>
+    <!-- Acordeón de experiencia -->
+    <div class="acordeon-item">
+      <input type="radio" name="acordeon-exp" id="exp1" hidden>
+      <label for="exp1" class="acordeon-titulo">
+        <p>Altice</p>
+        Asistente de Crédito
+      </label>
+      <div class="acordeon-contenido">
+        (2025 - Presente)
+        <ul>
+          <li>Analizar y depurar clientes B2C y B2B interesados en planes de voz y data.</li>
+          <li>Verificar cédulas y RNC de clientes corporativos según la matriz de productos.</li>
+          <li>Cambiar el estatus de clientes adversos que hayan pagado sus deudas.</li>
+          <li>Asegurar el análisis y ajuste de límites de crédito por segmento y producto.</li>
+          <li>Habilitar espacios para clientes B2C y B2B.</li>
+          <li>Ajustar el score de clientes fuera de los parámetros establecidos.</li>
+        </ul>        
+      </div>
+    </div>
+  
+    <div class="acordeon-item">
+      <input type="radio" name="acordeon-exp" id="exp2" hidden>
+      <label for="exp2" class="acordeon-titulo">
+        <p>Banco Caribe</p>
+        Oficial de Call Center
+      </label>
+      <div class="acordeon-contenido">
+        (2023 - 2025)
+        <ul>
+          <li>Visualización de datos en Power BI y Excel.</li>
+          <li>Creación de reportes de KPI para la dirección.</li>
+          <li>Optimización de bases de datos y procesos.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="acordeon-item">
+      <input type="radio" name="acordeon-exp" id="exp3" hidden>
+      <label for="exp3" class="acordeon-titulo">
+        <p>Enserros</p>
+        Digitadora de datos
+      </label>
+      <div class="acordeon-contenido">
+        (2019 - 2023)
+        <ul>
+          <li>Visualización de datos en Power BI y Excel.</li>
+          <li>Creación de reportes de KPI para la dirección.</li>
+          <li>Optimización de bases de datos y procesos.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <button onclick="scrollToSection('educacion')" class="scroll-button">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+  </section>
+
+
+
+  <!-- Sección Educación -->
+  <section id="educacion" class="full-screen">
+    <h2>Educación</h2>
+    <ul>
+      <li>Licenciatura en Informática - Universidad del Caribe</li>
+      <li>Especialidad Habilitacion docente - UAPA</li>
+    </ul>
+    <button onclick="scrollToSection('habilidades')" class="scroll-button">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section id="habilidades" class="full-screen">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Manejo avanzado de Office (Word, Excel, Outlook)</li>
+      <li>Digitación y verificación de datos</li>
+      <li>SQL y análisis de bases de datos</li>
+      <li>Power BI, Python, R</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Trabajo en equipo y servicio al cliente</li>
+    </ul>
+    <button onclick="scrollToSection('proyectos')" class="scroll-button">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+  </section>
+
+ <!-- Sección proyectos -->
+  <section id="proyectos" class="full-screen">
+    <h2>Proyectos</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Sistema de Gestión de Pedidos</h3>
+        <p>Desarrollo de una aplicación web para la gestión de pedidos utilizando Flask, SQLAlchemy y Bootstrap.</p>
+        <a href="https://example.com/gestion-pedidos" target="_blank" class="project-link">Ver Proyecto</a>
+      </div>
+      <div class="project-card">
+        <h3>Visualización de Datos</h3>
+        <p>Proyecto de análisis de datos y visualización interactiva usando Power BI y Python.</p>
+        <a href="https://example.com/visualizacion-datos" target="_blank" class="project-link">Ver Proyecto</a>
+      </div>
+      <div class="project-card">
+        <h3>Sitio Web Personal</h3>
+        <p>Creación de un sitio web responsivo con HTML, CSS y JavaScript para mostrar mi portafolio profesional.</p>
+        <a href="https://example.com/sitio-personal" target="_blank" class="project-link">Ver Proyecto</a>
+      </div>
+    </div>
+    <button onclick="scrollToSection('contacto')" class="scroll-button">
+      <i class="fas fa-chevron-down"></i> 
+    </button>
+  </section>
+  
+  <!-- Sección Contacto -->
+  <section id="contacto" class="full-screen">
+    <h2>Contacto</h2>
+    <p>Si deseas contactarme, envía un correo a <a href="acostam82@gmail.com" class="contact-link">acostam82@gmail.com</a>.</p>
+    
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/martha-acosta-ab8ab9272/" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/AcostaMartha" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+    
+    <button onclick="scrollToSection('proyectos')" class="scroll-button">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </section>
+  
+
+  <footer id="footer">
+    <p>&copy; 2025 Martha Acosta. Todos los derechos reservados.</p>
+    
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/victoria-sigaran" target="_blank" class="footer-icon">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/AcostaMartha" target="_blank" class="footer-icon">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="mailto:victoria@example.com" class="footer-icon">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+    </div>
+
+    <p>Cristo te Ama!</p>
+  </footer>
+  
+
+  <script>
+    // Script para mostrar y ocultar el menú hamburguesa
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.querySelector("nav");
+
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+
+    // Función para desplazarse entre las secciones
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+
+    
+  </script>
+
+</body>
+</html>
